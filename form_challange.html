@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="hospital-name">Hospital name:</label>
+        <input type="text" id="hospital-name" name="hospital-name" readonly required><br>
+      
+        <label for="first-name">First name:</label>
+        <input type="text" id="first-name" name="first-name" maxlength="20" autofocus required><br>
+      
+        <label for="last-name">Last name:</label>
+        <input type="text" id="last-name" name="last-name" size="30" required><br>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="on" required><br>
+      
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="77[0-9]{7}" required><br>
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" pattern="[A-Za-z]{8}" required><br>
+      
+        <label for="github-link">GitHub link:</label>
+        <input type="url" id="github-link" name="github-link" required><br>
+      
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" required><br>
+      
+        <label for="reservation-time">Time for reservation:</label>
+        <input type="time" id="reservation-time" name="reservation-time" required><br>
+      
+        <label for="reservation-price">Price of reservation:</label>
+        <input type="number" id="reservation-price" name="reservation-price" max="1000" required><br>
+      
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" checked required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+      
+        <label for="department">Choose department:</label>
+        <select id="department" name="department">
+          <option value="heart">Heart</option>
+          <option value="internal">Internal Medicine</option>
+          <option value="emergency" disabled>Emergency</option>
+          <option value="ophthalmology">Ophthalmology</option>
+        </select><br>
+      
+        <label for="city">Select city:</label>
+        <input type="text" id="city" name="city" list="cities" required>
+        <datalist id="cities">
+          <option value="City 1"></option>
+          <option value="City 2"></option>
+          <option value="City 3"></option>
+        </datalist><br>
+      
+        <label for="note">Note:</label>
+        <textarea id="note" name="note" rows="15" cols="20"></textarea><br>
+      
+        <label for="image">Uploaded image:</label>
+        <input type="file" id="image" name="image" accept="image/*" multiple required><br>
+      
+        <label for="hidden-field" hidden>Hidden field:</label>
+        <input type="text" id="hidden-field" name="hidden-field" value="123"><br>
+      
+        <button type="reset">Empty Form</button>
+        <button type="submit">Send Data</button>
+      </form>
+</body>
+</html>
